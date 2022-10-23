@@ -24,7 +24,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 50vw;
+  min-width: 80vw;
   min-height: var(--mh);
   display: flex;
   align-items: center;
