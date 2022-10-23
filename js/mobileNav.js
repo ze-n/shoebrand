@@ -8,5 +8,5 @@ button.addEventListener("click",()=>{
 
 const loading = document.querySelector("#loading");
 window.addEventListener("load",()=>{
-    loading.style.animation="blackHole .3s   ease forwards";
+    loading.style.animation="blackHole 300ms  ease forwards";
 })

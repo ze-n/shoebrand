@@ -20,18 +20,12 @@
   right: 0;
   bottom: 0;
   top: 0;
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: black;
+  background-image: url("/images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 5%;
   z-index: 999;
-}
-#loading img {
-  --s:8rem;
-  width: var(--s);
-  height: var(--s);
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .header {
