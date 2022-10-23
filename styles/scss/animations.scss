@@ -34,6 +34,14 @@
     }
     
 }
+@keyframes blackHole{
+    0%{
+        clip-path: circle(140.9% at 0 0);
+    }
+    100%{
+        clip-path: circle(0.0% at 0 0);
+    }
+}
 // scroll indicator animation
 .arrow{
     animation: updown .5s ease-in-out alternate-reverse infinite; 

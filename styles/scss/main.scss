@@ -22,6 +22,24 @@
     padding-inline:var(--pi);
     padding-block: var(--pb);
 }
+#loading{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background:black;
+    @include align-center(){
+        justify-content: center;
+    }
+    z-index: 999;
+    img{
+        --s:8rem;
+        width:var(--s);
+        height: var(--s);
+        object-fit: contain;
+    }
+}
 
 ///////////////////////
 /// ////////////////////
