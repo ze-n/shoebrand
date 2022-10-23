@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+*{
+    font-family:'Poppins', sans-serif;
+    font-weight: var(--fw-normal,300);
+}
+@mixin align-center {
+    display: flex;
+    align-items: center;
+    @content;
+}
+
+
+
+// make sure website doesn't break on wide monitors
+
+.wrapper{
+    --pi:1.5rem;
+    --pb:1.5rem;
+    width:100vw;
+    max-width:1200px;
+    margin-inline: auto;
+    padding-inline:var(--pi);
+    padding-block: var(--pb);
+}
+
+///////////////////////
+/// ////////////////////
+////////////////////
+
+.header{
+    --mh:600px;
+    @include align-center(){
+        justify-content: space-between;
+    }
+    &__nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width:50vw;
+        min-height:var(--mh);
+        @include align-center(){
+            justify-content: center;
+        }
+        &-links{
+            margin-bottom: .5rem;
+        }
+    }
+   
+  
+    
+    &__menu{
+        .bars{
+            width:1.3rem;
+            height:2px;
+            margin-bottom: .3rem;
+            
+        }
+        & :last-child{
+            margin-bottom: 0;
+        }   
+        cursor: pointer;
+        position: relative;
+        z-index: 99; 
+    }
+
+}
+
+.show-nav{
+    display: flex;
+}
+////////////////////
+/// /////////////////////
+/////////////////////
+.hero{
+    --mh:600px;
+    min-height: var(--mh);
+    padding-block: 2rem;
+    &__img{
+        position:absolute;
+        left: 0;
+        right:0;
+        top:0;
+        height:var(--mh);
+        object-fit: cover;
+        object-position:  15% center;
+        z-index: -1;
+        
+    }
+ 
+   
+   &__content{
+    width:250px;
+   }
+   .arrow{
+    height:150px;
+
+}
+}
+///////////////////////////////
+/// //////////////////
+/// ///////////////////
+
+.featured{
+    &__feature{
+        max-width: 400px;
+        margin-inline: auto;
+        .col-2{
+            height: 200px;
+            min-width:300px;
+            object-fit:cover;
+            object-position: center center;
+        }
+    }
+}

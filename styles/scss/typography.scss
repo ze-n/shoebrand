@@ -1,0 +1,78 @@
+
+*{  
+    // font-sizes 
+    --fs-title:24px;
+    --fs-sub-title:20px;
+    --fs-text:16px;
+    // font weights
+    --fw-bold:700;
+    --fw-normal:300;
+    // basic reset for fonts
+    font-size:var(--fs-text);
+    font-weight:var(--fw-normal);
+    
+}
+// basic font margins
+h2{
+    margin-block: 1em ;
+}
+p{
+    margin-bottom: 1.5em;
+}
+//////////////////////////////
+///////////////////////////////
+///////////////////////////
+
+.header{
+   
+    &__logo{
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-text);
+        span{
+            font-weight: inherit;
+        }
+    }
+    
+    &__nav-links{
+        text-decoration: none;
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-text);
+        display:block;
+    }
+
+}
+/////////////////////////////////////////
+///////////////////////////////////////////
+//////////////////////////////////////////
+.hero{
+ 
+   &__content{
+    
+    &-title{
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-title);
+        margin-block:1rem;
+        line-height: 1.2em;
+    }
+    &-text{
+        font-size: var(--fs-text);
+    }
+   }
+}
+
+////////////////////////////
+/// ////////////////////
+/// /////////////////////////
+
+.featured{
+   
+    &__feature{
+        h2{
+            font-size: var(--fs-sub-title);
+            font-weight: var(--fw-bold);
+        }
+        p{
+            font-size: var(--fs-text);
+        }
+    }
+}

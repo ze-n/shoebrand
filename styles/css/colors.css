@@ -1,0 +1,32 @@
+* {
+  --black-clr-700: #000000;
+  --accent-clr: #CC041E;
+  --white-clr-700:rgb(253, 253, 253);
+}
+
+body {
+  background-color: var(--white-clr-700);
+}
+
+.header__logo {
+  color: var(--white-clr-700);
+}
+.header__logo span {
+  color: var(--black-clr-700);
+}
+.header__nav {
+  background-color: var(--white-clr-700);
+}
+.header__nav-links {
+  color: var(--black-clr-700);
+}
+.header__menu .bars {
+  background: var(--black-clr-700);
+}
+
+.hero {
+  color: var(--white-clr-700);
+}
+.hero .arrow {
+  fill: var(--white-clr-700);
+}/*# sourceMappingURL=colors.css.map */
