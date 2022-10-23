@@ -25,6 +25,15 @@
         opacity:1;
     }
 }
+@keyframes opacity {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
 // scroll indicator animation
 .arrow{
     animation: updown .5s ease-in-out alternate-reverse infinite; 
@@ -52,7 +61,7 @@
     --ad:1s;
     --delay:1s;
     opacity:0;
-    animation: revealY var(--ad) var(--delay) ease-in-out forwards;
+    animation: opacity var(--ad) var(--delay) ease-in-out forwards;
 
 }
 // header nav animation for small screen devices

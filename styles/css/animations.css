@@ -58,6 +58,22 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .arrow {
   animation: updown 0.5s ease-in-out alternate-reverse infinite;
 }
@@ -81,8 +97,8 @@
   --ad:1s;
   --delay:1s;
   opacity: 0;
-  -webkit-animation: revealY var(--ad) var(--delay) ease-in-out forwards;
-          animation: revealY var(--ad) var(--delay) ease-in-out forwards;
+  -webkit-animation: opacity var(--ad) var(--delay) ease-in-out forwards;
+          animation: opacity var(--ad) var(--delay) ease-in-out forwards;
 }
 
 .header__nav {

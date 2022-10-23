@@ -82,6 +82,7 @@
 .featured__feature .col-2 {
   height: 200px;
   min-width: 300px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
