@@ -30,9 +30,10 @@
     animation: updown .5s ease-in-out alternate-reverse infinite; 
 }
 // hero image animation that will be shown as soon as page loads
+
 .hero{
     --ad:1s;
-    --delaly:.8s;
+    --delay:.8s;
     &__img{
        animation: brokenRevealY var(--ad) ease-in-out forwards;
     }
@@ -42,11 +43,20 @@
 .hero{
     &__content{
         opacity: 0;
-        animation: revealY var(--ad) var(--delaly) ease-in-out forwards;
+        animation: revealY var(--ad) var(--delay) ease-in-out forwards;
 
     }
 }
+//  header reveal animation
+.header{
+    --ad:1s;
+    --delay:1s;
+    opacity:0;
+    animation: revealY var(--ad) var(--delay) ease-in-out forwards;
+
+}
 // header nav animation for small screen devices
+
 .header__nav{
     clip-path: circle(0.0% at 100% 0);
     transition: clip-path .5s ease ;

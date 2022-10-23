@@ -64,7 +64,7 @@
 
 .hero {
   --ad:1s;
-  --delaly:.8s;
+  --delay:.8s;
 }
 .hero__img {
   -webkit-animation: brokenRevealY var(--ad) ease-in-out forwards;
@@ -73,8 +73,16 @@
 
 .hero__content {
   opacity: 0;
-  -webkit-animation: revealY var(--ad) var(--delaly) ease-in-out forwards;
-          animation: revealY var(--ad) var(--delaly) ease-in-out forwards;
+  -webkit-animation: revealY var(--ad) var(--delay) ease-in-out forwards;
+          animation: revealY var(--ad) var(--delay) ease-in-out forwards;
+}
+
+.header {
+  --ad:1s;
+  --delay:1s;
+  opacity: 0;
+  -webkit-animation: revealY var(--ad) var(--delay) ease-in-out forwards;
+          animation: revealY var(--ad) var(--delay) ease-in-out forwards;
 }
 
 .header__nav {
