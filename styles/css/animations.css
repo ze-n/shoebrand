@@ -15,81 +15,66 @@
   }
 }
 @-webkit-keyframes brokenRevealY {
-  0% {
-    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
+  from {
+    -webkit-clip-path: circle(8.9% at 50% 50%);
+            clip-path: circle(8.9% at 50% 50%);
   }
-  30% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 58% 29%, 39% 60%, 0 24%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 58% 29%, 39% 60%, 0 24%, 0 0, 0 0);
-  }
-  70% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 90%, 39% 60%, 1% 71%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 90%, 39% 60%, 1% 71%, 0 0, 0 0);
-  }
-  100% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
+  to {
+    -webkit-clip-path: circle(70.7% at 50% 50%);
+            clip-path: circle(70.7% at 50% 50%);
   }
 }
 @keyframes brokenRevealY {
-  0% {
-    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
+  from {
+    -webkit-clip-path: circle(8.9% at 50% 50%);
+            clip-path: circle(8.9% at 50% 50%);
   }
-  30% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 58% 29%, 39% 60%, 0 24%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 58% 29%, 39% 60%, 0 24%, 0 0, 0 0);
-  }
-  70% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 90%, 39% 60%, 1% 71%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 90%, 39% 60%, 1% 71%, 0 0, 0 0);
-  }
-  100% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
+  to {
+    -webkit-clip-path: circle(70.7% at 50% 50%);
+            clip-path: circle(70.7% at 50% 50%);
   }
 }
 @-webkit-keyframes revealY {
   0% {
-    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 1;
   }
   100% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    opacity: 1;
   }
 }
 @keyframes revealY {
   0% {
-    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 80% 0%, 100% 1%, 94% 0, 64% 0, 23% 0, 0 0, 0 0);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 1;
   }
   100% {
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
-            clip-path: polygon(20% 0%, 100% 0, 100% 34%, 100% 100%, 35% 100%, 0 100%, 0 0, 0 0);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    opacity: 1;
   }
 }
 .arrow {
   animation: updown 0.5s ease-in-out alternate-reverse infinite;
 }
 
+.hero {
+  --ad:1s;
+  --delaly:.8s;
+}
 .hero__img {
-  -webkit-animation: brokenRevealY 0.8s ease-in-out forwards;
-          animation: brokenRevealY 0.8s ease-in-out forwards;
+  -webkit-animation: brokenRevealY var(--ad) ease-in-out forwards;
+          animation: brokenRevealY var(--ad) ease-in-out forwards;
 }
 
 .hero__content {
-  -webkit-animation: revealY 1s ease-in-out forwards;
-          animation: revealY 1s ease-in-out forwards;
-}
-.hero__content-title {
-  -webkit-animation: revealY 1s ease-in-out forwards;
-          animation: revealY 1s ease-in-out forwards;
-}
-.hero__content-text {
-  -webkit-animation: revealY 1s ease-in-out forwards;
-          animation: revealY 1s ease-in-out forwards;
+  opacity: 0;
+  -webkit-animation: revealY var(--ad) var(--delaly) ease-in-out forwards;
+          animation: revealY var(--ad) var(--delaly) ease-in-out forwards;
 }
 
 .header__nav {
