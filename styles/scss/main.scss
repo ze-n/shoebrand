@@ -36,7 +36,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        min-width:80vw;
+        width:80vw;
+        max-width: 500px;
         min-height:var(--mh);
         @include align-center(){
             justify-content: center;

@@ -27,16 +27,17 @@ p{
    
     &__logo{
         font-weight: var(--fw-bold);
-        font-size: var(--fs-text);
+        font-size: calc(var(--fs-text) + 2px);
         span{
             font-weight: inherit;
+            font-size: inherit;
         }
     }
     
     &__nav-links{
         text-decoration: none;
         font-weight: var(--fw-bold);
-        font-size: var(--fs-text);
+        font-size: calc(var(--fs-text) - 2px);
         display:block;
     }
 

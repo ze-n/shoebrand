@@ -18,15 +18,16 @@ p {
 
 .header__logo {
   font-weight: var(--fw-bold);
-  font-size: var(--fs-text);
+  font-size: calc(var(--fs-text) + 2px);
 }
 .header__logo span {
   font-weight: inherit;
+  font-size: inherit;
 }
 .header__nav-links {
   text-decoration: none;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-text);
+  font-size: calc(var(--fs-text) - 2px);
   display: block;
 }
 

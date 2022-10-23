@@ -13,6 +13,7 @@
 .header{
     &__logo{
         color:var(--accent-clr);
+        font-size: calc(var(--fs-text) + 4px);
     }
     &__menu{
         display: none;
@@ -23,7 +24,6 @@
         position:static;
         background-color: transparent;
         justify-content: flex-end;
-
     }
     &__nav-list{
         display: flex;
