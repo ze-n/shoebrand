@@ -14,20 +14,6 @@
   padding-block: var(--pb);
 }
 
-#loading {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: black;
-  background-image: url("/images/loading.gif");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 5%;
-  z-index: 999;
-}
-
 .header {
   --mh:600px;
   display: flex;

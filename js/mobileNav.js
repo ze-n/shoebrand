@@ -6,7 +6,3 @@ button.addEventListener("click",()=>{
     button.classList.toggle("menu-close");
 });
 
-const loading = document.querySelector("#loading");
-window.addEventListener("load",()=>{
-    loading.style.animation="blackHole 300ms  ease forwards";
-})
